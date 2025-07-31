@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Report</title>
+</head>
+<body>
+    <h2>_Report_</h2>
+    
+    {% if image_tag %}
+        <div>
+            {{ image_tag | safe }}
+        </div>
+    {% endif %}
+
+    <div>
+        {{ content | safe }}
+    </div>
+</body>
+</html>
